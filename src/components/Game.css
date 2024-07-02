@@ -1,0 +1,115 @@
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.game h1 {
+    font-size: 2.5em;
+}
+
+.points span {
+    font-weight: bold;
+}
+
+.tip span {
+    color: #ecfa00;
+}
+
+.wordContainer {
+    margin: 1.5em;
+    padding: 1.5em;
+    border: 20px solid #ecfa00;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.letter, .blankSquare {
+    width: 100px;
+    height: 100px;
+    font-size: 70px;
+    line-height: 1.5em;
+    border: 3px solid #000;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.letterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.2em;
+}
+
+.letterContainer p {
+    margin-bottom: 1.2em;
+}
+
+.letterContainer form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.letterContainer input {
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    text-align: center;
+    margin-right: 1em;
+}
+
+.wrongLettersContainer {
+    text-align: center;
+    margin-top: 1em;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .game h1 {
+        font-size: 1.5em;
+    }
+
+    .points span {
+        font-size: 1em;
+    }
+
+    .tip span {
+        font-size: 1em;
+    }
+
+    .wordContainer {
+        margin: 1em;
+        padding: 1em;
+        border: 10px solid #ecfa00;
+    }
+
+    .letter, .blankSquare {
+        width: 50px;
+        height: 50px;
+        font-size: 35px;
+        line-height: 1.2em;
+        border: 2px solid #000;
+        margin: 2px;
+    }
+
+    .letterContainer p {
+        margin-bottom: 0.8em;
+        font-size: 1em;
+    }
+
+    .letterContainer input {
+        width: 30px;
+        height: 30px;
+        font-size: 1.5em;
+        margin-right: 0.5em;
+    }
+}
